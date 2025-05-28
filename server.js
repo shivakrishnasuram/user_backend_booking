@@ -9,6 +9,9 @@ app.use(cors())
 // app.use(express.cors())
 app.use(express.json());
 app.use('/', userRoutes);
+app.get("/get",(req,res)=>{
+    res.send("this is made by me ")
+})
 
 // connectDB();
 const PORT = 3000;
