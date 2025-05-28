@@ -11,5 +11,5 @@ const userSchema = new mongoose.Schema({
         required: true
     }
 });
-const User = mongoose.model('User', userSchema, 'newusers');
+const User = mongoose.model('User', userSchema, 'regischema');
 module.exports = User;
