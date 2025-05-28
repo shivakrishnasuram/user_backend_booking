@@ -9,9 +9,19 @@ app.use(cors())
 // app.use(express.cors())
 app.use(express.json());
 app.use('/', userRoutes);
-app.get("/get",(req,res)=>{
-    res.send("this is made by me ")
-})
+app.get("/get", (req, res) => {
+    res.send(`
+        <html>
+            <head>
+                <title>Hello</title>
+            </head>
+            <body>
+                <h1>Hello, this is Shiva Krishna Suram, from Hyderabad</h1>
+            </body>
+        </html>
+    `);
+});
+
 
 // connectDB();
 const PORT = 3000;
